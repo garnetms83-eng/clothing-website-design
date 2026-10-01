@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            width: 320px;
+            margin: auto;
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,.08);
+            transition: .3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .product-image {
+            position: relative;
+            height: 360px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .4s;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .discount {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #e63946;
+            color: #fff;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            z-index: 2;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .category {
+            color: #888;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .new-price {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .old-price {
+            color: #999;
+            text-decoration: line-through;
+            font-size: 13px;
+        }
+
+        .button {
+            display: block;
+            text-align: center;
+            background: #111;
+            color: #fff;
+            text-decoration: none;
+            padding: 13px;
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        .button:hover {
+            background: #e63946;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="product-card">
+
+    <div class="product-image">
+        <span class="discount">20٪ تخفیف</span>
+
+        <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+            alt="تی شرت مردانه"
+        >
+    </div>
+
+    <div class="content">
+
+        <div class="category">پوشاک مردانه</div>
+
+        <h2>تی‌شرت ساده نخی مردانه</h2>
+
+        <div class="price">
+            <span class="new-price">۸۹۰,۰۰۰ تومان</span>
+            <span class="old-price">۱,۱۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <a href="#" class="button">مشاهده محصول</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
